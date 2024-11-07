@@ -25,6 +25,8 @@ header{
     padding: 0 2rem;
     text-align: center;
     display: flex;
+    font-size: 1.3rem;
+    z-index: 100;
     align-items: center;
     box-shadow: 0 0 10 rgba(0, 0, 0, 0.1 );
     justify-content: space-between;
@@ -358,7 +360,10 @@ gap:1rem;
 #contact .partie1{
     background-color:#ccb6fa ;
     display: flex;
+    padding: 20px;
+    /* position: absolute; */
     flex-direction: column;
+    /* padding-top: -20px; */
     justify-content: center;
     height: 315px;
     overflow: auto;
@@ -411,10 +416,10 @@ display: flex;flex-direction: column;
 footer{
     width: 100%;
     height: 100px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     background-color: var(--var-text-color);
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
 }
 .reseaux{
@@ -473,6 +478,7 @@ header nav{
 }
 }
 @media screen and (max-width:775px) {
+   
     .photo{
         display: block;
         /* gap:30px; */
@@ -482,6 +488,10 @@ header nav{
         /* width: 90%; */
         object-fit: cover;
         margin: 20px;
+    }
+    footer p {
+        position: fixed;
+        width: 100%;
     }
     
 }
