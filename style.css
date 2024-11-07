@@ -18,6 +18,7 @@ body{
     font-family: cursive;
     background-color: var(--var-bg-light);
     color:var( --var-text-color-dark);
+    font-size: 1rem;
 }
 header{
     height:4rem;
@@ -216,8 +217,16 @@ font-size: 1.5rem;
     color:var(--var-text-color);
     transform: scale(1.2);
 }
+.image_album{
+    border-radius: 10px;
+background-color: var(--var-secondary-color);
+}
 
-
+.icone_whatsapp{
+    border: 1px solid none;
+    border-radius: 50%;
+    background-color: var(--var-text-color);
+}
 
 
 /* mise en forme de la section service */
@@ -415,12 +424,16 @@ display: flex;flex-direction: column;
 }
 footer{
     width: 100%;
-    height: 100px;
+  
     margin-top: 1rem;
     background-color: var(--var-text-color);
     align-items: center;
     justify-content: space-around;
     display: flex;
+}
+footer img{
+    border-radius: 50%;
+    border: 1px solid var(--var-secondary-color);
 }
 .reseaux{
     position: fixed;
@@ -432,7 +445,7 @@ z-index: 1;
 }
 .reseaux img{
     border-radius: 50%;
-    /* width: 50px; */
+    
     height: 40px;
 
     cursor: pointer;
@@ -485,13 +498,16 @@ header nav{
         /* flex-direction: column; */
     }
     .photo img{
-        /* width: 90%; */
+       
         object-fit: cover;
         margin: 20px;
     }
-    footer p {
-        position: fixed;
-        width: 100%;
-    }
+ footer{
+    display: block;
+    margin: 15px auto;
+    font-size: 1.4rem;
+    
+ }
+ 
     
 }
