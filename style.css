@@ -21,7 +21,7 @@ body{
     font-size: 1rem;
 }
 header{
-    height:4rem;
+    height:15vh;
     background-color: #fff;
     padding: 0 2rem;
     text-align: center;
@@ -96,39 +96,38 @@ main{
 }
 #hero{
     width: 100%;
-    height: 70%;
-    border-radius: 5px;
-    background-color: var(--var-secondary-color);
-    /* linear-gradient(
-        90deg,
-        var(--var-bg-color) 15%,
-        var(--var-secondary-color) 100%
-
-    ) ; */
-    /* border:2px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center; 
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center; 
 }
 #hero .gauche h1{
-    font-size: 3rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 5rem;
     font-weight: 900;
-    color:#fff;
+    color: var(--var-secondary-color);
 }
 #hero .gauche p{
     font-size: clamp(1rem,2vw,1rem);
-    margin-left: 15px;
-    margin-right: 15px;
-    color:#fff;
+    margin: 22px 9px;
+    
+    width: 60%;
+    
+    color:black;
 }
 #hero button{
-    background-color: #fff;
-    color:var(--var-text-color-dark);
+    background-color: var(--var-text-color-dark);
+    color:#fff;
     border:none;
     margin-top: 1.4rem;
     padding: 0.9rem;
     border-radius: 0.23rem;
     cursor:pointer ;
+}
+#hero button a{
+    color:#fff;
 }
 .droite{
     width: 100%;
@@ -139,13 +138,14 @@ main{
     align-items: center;
 }
 .droite img{
+    border-radius: 15px;
     width: 100%;
     
-    height: 100%;
+    
     object-fit: cover;
 }
 .effets{
-    /* background:red; */
+    
     position: absolute;
     height: 100%;
     width: 100%;
@@ -377,14 +377,14 @@ gap:1rem;
     background-color:#ccb6fa ;
     display: flex;
     padding: 20px;
-    /* position: absolute; */
+   margin: 50px 0;
     flex-direction: column;
-    /* padding-top: -20px; */
+    
     justify-content: center;
-    height: 315px;
+    
     overflow: auto;
     align-items: center;
-    /* height: 100%; */
+   
 
 }
 #contact h2{
@@ -472,19 +472,27 @@ a{
 }
 /* nous sommes au mode responsive */
 @media screen and (max-width:768px){
-    /* body{
-        background-color: red;
-    } */
+  
 header nav{
     display:none;
 }
+.droite img{
+    width: 100%;
+    
+}
 #hero{
+    /* background-color: brown; */
     flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    gap:10px;
+    /* gap:10px; */
 }
 #hero .gauche h1{
     font-size: 40px;
+    margin: 0 auto;
 }
 .gauche{
     display: flex;
