@@ -210,16 +210,23 @@ main{
 font-size: 1.5rem;
     background-color: var(--var-secondary-color);
     color:var(--var-bg-color);
-    transition: 3s infinite ;
+    transition: 3s ;
 }
 .apprendre_plus a:hover{
+    
     transform: translate(-200px);
     color:var(--var-text-color);
+    border-radius: 50%;
     transform: scale(1.2);
 }
 .image_album{
     border-radius: 10px;
 background-color: var(--var-secondary-color);
+}
+.image-facebook:hover{
+    background-color:var(--var-secondary-color) ;
+    border-radius: 50%;
+    transition: 1s ease-in-out;
 }
 
 .icone_whatsapp{
