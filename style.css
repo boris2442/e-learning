@@ -413,9 +413,9 @@ display: flex;flex-direction: column;
     height: 120px;
   
 }
-.icon i img{
-   padding-right: 10px;
-  
+
+.image{
+    float: 10px;
 }
 .partie2 form input:focus,textarea:focus{
    border:1px solid var(--var-bg-color); 
