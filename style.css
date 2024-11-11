@@ -411,7 +411,7 @@ display: flex;flex-direction: column;
 }
 .partie2 form textarea{
     height: 120px;
-    /* animation: */
+  
 }
 .partie2 form input:focus,textarea:focus{
    border:1px solid var(--var-bg-color); 
@@ -481,7 +481,7 @@ header nav{
     
 }
 #hero{
-    /* background-color: brown; */
+   
     flex-direction: column;
     width: 100%;
     padding: 30px;
