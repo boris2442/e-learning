@@ -488,7 +488,7 @@ header nav{
    
     flex-direction: column;
     width: 100%;
-    padding: 30px;
+    /* padding: 30px; */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -508,6 +508,12 @@ header nav{
     flex-direction: column;
     min-height: 100vh;
 }
+}
+img{
+    transition: 1s ease-in-out;
+}
+img:hover{
+    transform: rotateY(180deg);
 }
 @media screen and (max-width:775px) {
    
