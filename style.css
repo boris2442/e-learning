@@ -168,7 +168,7 @@ main{
 }
 .circle:nth-child(2){
     background-color:var(--var-bg-color) ;
-    /* opacity: 0.25; */
+   
     opacity: 0.5;
     border-radius: 50%;
     left: 10px;
@@ -487,11 +487,12 @@ header nav{
 #hero{
    
     flex-direction: column;
+    display: block;
     width: 100%;
     /* padding: 30px; */
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 110vh;
     /* gap:10px; */
 }
 #hero .gauche h1{
