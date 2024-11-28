@@ -33,8 +33,13 @@ header{
     justify-content: space-between;
     position:sticky;
     width: 100%;
-    /* z-index: 1000; */
+  
     top:0;
+}
+header h2{
+    font-family: "Parisienne", serif;
+    font-weight: 900;
+    font-style: normal; 
 }
 header ul li{
     list-style-type: none;
@@ -362,7 +367,7 @@ border: 1.5px solid var(--var-bg-color);
 display: grid;
 grid-template-columns: repeat(4, 4fr);
 flex-wrap: wrap;
-gap:1rem;
+gap:1.5rem;
 }
 .photo img{
    width: 100%; 
