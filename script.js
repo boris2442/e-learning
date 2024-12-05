@@ -8,7 +8,7 @@ new Typewriter(titre,
     // typewriter
     .typeString("Bienvenue chez Boris Fashion")
     .pauseFor(2000)
-    .deleteAll(500)
+    .deleteAll(100)
     .pauseFor(2000)
     .typeString(" <span style='fontFamily:'parisienne'' >Votre fournisseur par excellence   en matiere du shopping </span>")
     .pauseFor(1000)
