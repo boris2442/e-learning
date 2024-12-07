@@ -17,7 +17,7 @@ new Typewriter(titre,
 // programme concernant uniquement le header
 
 const header =document.querySelector("header");
-const link = document.querySelectorAll("a");
+const link = document.querySelectorAll("nav>ul>li>a");
 window.addEventListener("scroll", ()=>{
     if(window.scrollY>300){
         header.classList.add("scroll");
