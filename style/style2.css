@@ -1,0 +1,11 @@
+.scroll{
+background-color: var(--var-bg-color);
+color:var( --var-text-color);
+font-size: 1.2rem;
+border-bottom: 1px solid balck;
+box-shadow: 0px 3px 5px rgb(255, 255, 255);
+}
+.link{
+    color:var(--var-text-color);
+    font-size: 1.2rem;
+}

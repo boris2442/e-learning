@@ -17,10 +17,12 @@ new Typewriter(titre,
 // programme concernant uniquement le header
 
 const header =document.querySelector("header");
+const link = document.querySelector("nav ul li a");
 window.addEventListener("scroll", ()=>{
     if(window.scrollY>300){
-        header.style.background="var( --var-secondary-color)";
+        header.classList.add("scroll");
+        header.classList.add("link");
     }else{
-        header.style.background="var(--var-text-color)";
+        header.classList.remove("scroll");
     }
-})
+});
