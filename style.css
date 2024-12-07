@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
     font-family: cursive;
+    text-decoration: none;
+    scroll-behavior: smooth;
+list-style-type: none;
     box-sizing: border-box;
 }
 /* declaration des variables */
@@ -18,7 +21,7 @@ body{
     font-family: cursive;
     background-color: var(--var-bg-light);
     color:var( --var-text-color-dark);
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 header{
     height:15vh;
@@ -470,6 +473,11 @@ footer img{
     border-radius: 50%;
     border: 1px solid var(--var-secondary-color);
 }
+/* .footer p{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+} */
 .reseaux{
     position: fixed;
     top:300px;
