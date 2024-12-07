@@ -21,8 +21,9 @@ const link = document.querySelector("nav ul li a");
 window.addEventListener("scroll", ()=>{
     if(window.scrollY>300){
         header.classList.add("scroll");
-        header.classList.add("link");
+        link.classList.add("link");
     }else{
         header.classList.remove("scroll");
+        link.classList.remove("link");
     }
 });
