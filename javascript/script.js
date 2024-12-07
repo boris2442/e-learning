@@ -17,13 +17,19 @@ new Typewriter(titre,
 // programme concernant uniquement le header
 
 const header =document.querySelector("header");
-const link = document.querySelector("nav ul li a");
+const link = document.querySelectorAll("a");
 window.addEventListener("scroll", ()=>{
     if(window.scrollY>300){
         header.classList.add("scroll");
-        link.classList.add("link");
+        link.forEach(link => {
+            link.classList.add("link"); // Ajouter la classe "link" à tous les <a>
+          });
+        // link.classList.add("link");
     }else{
         header.classList.remove("scroll");
-        link.classList.remove("link");
+        link.forEach(link => {
+            link.classList.remove("link"); // Supprimer la classe "link" de tous les <a>
+          });
+        // link.classList.remove("link");
     }
 });
