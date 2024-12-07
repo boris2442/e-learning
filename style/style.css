@@ -402,10 +402,10 @@ gap:1.5rem;
     padding: 20px;
    margin: 50px 0;
     flex-direction: column;
-    
+    height: 400px;
     justify-content: center;
 /* margin: auto; */
-    /* overflow: auto; */
+    overflow: auto;
     align-items: center;
    
 
@@ -462,8 +462,10 @@ display: flex;flex-direction: column;
 
 }
 footer{
+    margin-top: 60px;
     width: 100%;
-  
+  position: sticky;
+  bottom: 0;
     margin-top: 1rem;
     background-color: var(--var-text-color);
     align-items: center;
@@ -474,11 +476,7 @@ footer img{
     border-radius: 50%;
     border: 1px solid var(--var-secondary-color);
 }
-/* .footer p{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-} */
+
 .reseaux{
     position: fixed;
     top:300px;
@@ -509,7 +507,11 @@ a{
     border: none;
     border:2px solid none;
 }
+
+
 /* nous sommes au mode responsive */
+
+
 
 @media screen and (max-width:768px){
   
