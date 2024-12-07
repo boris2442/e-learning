@@ -14,3 +14,13 @@ new Typewriter(titre,
     .pauseFor(1000)
     .start();
 
+// programme concernant uniquement le header
+
+const header =document.querySelector("header");
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY>300){
+        header.style.background="var( --var-secondary-color)";
+    }else{
+        header.style.background="var(--var-text-color)";
+    }
+})

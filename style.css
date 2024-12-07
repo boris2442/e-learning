@@ -32,7 +32,7 @@ header{
     font-size: 1.3rem;
     z-index: 100;
     align-items: center;
-    box-shadow: 0 0 10 rgba(0, 0, 0, 0.1 );
+    box-shadow: 0 5px 20px 10px rgba(49, 43, 43, 0.1);
     justify-content: space-between;
     position:sticky;
     width: 100%;
