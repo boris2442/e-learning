@@ -8,7 +8,13 @@
 list-style-type: none;
     box-sizing: border-box;
 }
-/* declaration des variables */
+
+
+
+/*############ declaration des variables############ */
+
+
+
 html{
     --var-bg-color:#7743e9;
     --var-secondary-color:#6e51cf;
