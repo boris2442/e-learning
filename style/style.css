@@ -109,6 +109,8 @@ header button:hover{
 main{
     padding: 2rem;
 }
+
+/* #############first section ########### */
 #hero{
     width: 100%;
   
@@ -263,6 +265,9 @@ background-color: var(--var-secondary-color);
 
 
 /* mise en forme de la section service */
+
+
+
 #services {
     margin-top: 2rem;
     position: relative;
@@ -287,7 +292,7 @@ border: 1.5px solid var(--var-bg-color);
     background-color: var(--var-bg-color);
 border: 1.5px solid var(--var-bg-color);
 left: -70px;
-bottom: 321px;
+bottom: 402px;
 
     
 }
