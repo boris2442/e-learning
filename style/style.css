@@ -368,7 +368,7 @@ border: 1.5px solid var(--var-bg-color);
 
 }
 
-#album h2::before{
+/* #album h2::before{
     content: "";
     position: absolute;
     background-color: var(--var-bg-color);
@@ -379,7 +379,7 @@ border: 1.5px solid var(--var-bg-color);
     left: -45px;
 
 
-}
+} */
 .photo{
 display: grid;
 grid-template-columns: repeat(4, 4fr);
@@ -394,8 +394,9 @@ gap:1.5rem;
 #contact{
     margin-top: 3rem;
     display: flex;
-    height: calc(100vw - 800px);
+    /* height: calc(100vw - 800px); */
     background-color: #fff;
+    height: 100vh;
 }
 #contact .partie1, .partie2{
     flex: 1;
@@ -414,7 +415,7 @@ gap:1.5rem;
     padding: 20px;
    margin: 50px 0;
     flex-direction: column;
-    height: 400px;
+    /* height: 400px; */
     justify-content: center;
 /* margin: auto; */
     overflow: auto;
@@ -496,7 +497,7 @@ footer img{
     gap:40px;
     padding: 0 10px;
     display: flex;
-z-index: 1;
+z-index: -1;
     flex-direction: column;
 }
 .reseaux img{
@@ -557,6 +558,7 @@ header nav{
 }
 #contact{
     flex-direction: column;
+    
     /* min-height: 100vh; */
 }
 }
