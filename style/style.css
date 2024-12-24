@@ -52,6 +52,7 @@ header h2{
 }
 header ul li{
     list-style-type: none;
+    transition: 1s ease-in-out;
 }
 header nav ul{
     display: flex;
@@ -64,31 +65,34 @@ nav ul li a{
     font-weight: 500;
     position: relative;
     font-size: 1.2rem;
-    transition: 0.3s ease-in-out;
+   
 
 }
-    nav ul li a:hover::after{
+    nav ul li a::after{
         content: "";
         background-color: #6e51cf;
-       
-        height: 1px;
+    
+        height: 0px;
        left: 0;
         border: 1.2px solid  ;
         position: absolute;
-        width:100%;
+        width:0;
     }
-    nav ul li a:hover::before{
+    nav ul li a::before{
 content: "";
 position: absolute;
-width: 100%;
+width: 0;
 bottom: -2px;
 border: 1px solid #6e51cf;
-height: 1px;
+height: 0px;
+
 background-color: #6e51cf;
 
     }
-nav ul li a:hover{
+nav ul li a:hover::after, nav ul li a:hover::before {
     color:var(--var-secondary-color);
+    width: 100%;
+    height: 2px;
 }
 header button{
     background-color: var(--var-secondary-color);

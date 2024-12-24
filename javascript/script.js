@@ -33,3 +33,6 @@ window.addEventListener("scroll", ()=>{
         // link.classList.remove("link");
     }
 });
+
+
+const sr=
