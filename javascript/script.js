@@ -38,10 +38,10 @@ window.addEventListener("scroll", ()=>{
 // partie destinee a la librairie scrollreveal
 
 const sr = ScrollReveal({
-    duration:2000,
+    duration:1500,
     reset:true,
     distance:"30px",
     origin:"top"
 })
 
-sr.reveal(".fotter-text, .contact, .album, .services")
+sr.reveal(".fotter-text, .contact, .album, .services, .reseaux, .hero", {interval:200})
