@@ -513,7 +513,9 @@ a{
     border:2px solid none;
 }
 
-
+.services img{
+    z-index: 10000;
+}
 /*############# nous sommes au mode responsive */
 
 
