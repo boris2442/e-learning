@@ -289,21 +289,6 @@ top:20px ;
 border: 1.5px solid var(--var-bg-color);
 }
 
-#services h2::after{
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 50%;
-    background-color: var(--var-bg-color);
-border: 1.5px solid var(--var-bg-color);
-left: -70px;
-
-
-    
-}
-
-
-
 #services h2{
     font-size: 2rem;
     font-weight: bold;
