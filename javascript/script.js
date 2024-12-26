@@ -37,11 +37,32 @@ window.addEventListener("scroll", ()=>{
 
 // partie destinee a la librairie scrollreveal
 
-const sr = ScrollReveal({
+const sr=ScrollReveal({
     duration:1500,
-    reset:true,
+    origin:"top",
     distance:"30px",
-    origin:"top"
+    reset:true
 })
 
 sr.reveal(".fotter-text, .contact, .album, .services, .reseaux, .hero", {interval:200})
+
+
+
+// partie du code reservee au burger
+
+const burger=document.querySelector(".bars");
+const navigation=document.querySelector("header ul");
+const rem=document.querySelector(".remov")
+burger.addEventListener("click", ()=>{
+    navigation.classList.toggle("active")
+     navigation.style.transition='1s ease-in-out'
+ 
+
+})
+
+
+
+window.addEventListener("scroll", ()=>{
+    navigation.classList.remove("active")
+    navigation.style.transition='1s ease-in-out'
+})

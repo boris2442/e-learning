@@ -110,10 +110,22 @@ header button:hover{
     color:var(--var-text-color-dark);
     border:1px solid var(--var-secondary-color);
 }
+header div .bars{
+   position: absolute;
+   padding-left: 10px;
+   top: -100%;
+}
+.bars2{
+    top: 42%;
+}
+header i{
+    cursor: pointer;
+}
 
 main{
     padding: 2rem;
 }
+
 
 /* #############first section ########### */
 #hero{
@@ -394,9 +406,9 @@ gap:1.5rem;
     padding: 20px;
    margin: 50px 0;
     flex-direction: column;
-    /* height: 400px; */
+  
     justify-content: center;
-/* margin: auto; */
+
     overflow: auto;
     align-items: center;
    
@@ -502,14 +514,48 @@ a{
 }
 
 
-/* nous sommes au mode responsive */
+/*############# nous sommes au mode responsive */
 
 
 
 @media screen and (max-width:768px){
   
-header nav{
-    display:none;
+header ul{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: -100%;
+  top: 15vh;
+  width: 300px;
+  height: 400px;
+ 
+  background-color: #ccb6fa;
+}
+header div .remov{
+    position: absolute;
+    top: -100%;
+}
+.remov2{
+    top: 42%;
+    color:#fff;
+    position: absolute;
+
+}
+.active{
+    position: absolute;
+    transition: .7s ease-in-out;
+    right: 0;
+}
+header div .bars{
+   top: 42%;
+   transition: .7s ease-in-out;
+   position: absolute; 
+}
+header ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 }
 .droite img{
     width: 100%;
