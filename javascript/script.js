@@ -35,4 +35,13 @@ window.addEventListener("scroll", ()=>{
 });
 
 
-const sr=
+// partie destinee a la librairie scrollreveal
+
+const sr = ScrollReveal({
+    duration:2000,
+    reset:true,
+    distance:"30px",
+    origin:"top"
+})
+
+sr.reveal(".fotter-text, .contact, .album, .services")
