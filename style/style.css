@@ -311,16 +311,21 @@ border: 1.5px solid var(--var-bg-color);
 .services_list{
    
     display: flex;
-    justify-content: space-between;
+   
     align-items: center;
     gap:30px;
+ 
+    width:100%;
     margin-top:3rem ;
+    padding: 2px;
     flex-wrap: wrap;
 }
 .card_service{
     flex:1;
     background-color: #fff;
 padding: 1rem;
+
+max-width: 500px;
 border-radius: 10px;
 position: relative;
 
@@ -614,5 +619,13 @@ img:hover{
     
  }
  
+    
+}
+@media screen and (max-width:1170px){
+    .services_list{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
     
 }
