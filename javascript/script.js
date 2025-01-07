@@ -72,10 +72,20 @@ const sections=document.querySelectorAll("section");
 
 const scrollActive=()=>{
     sections.forEach(section=>{
-   let top=section.offsetTop
-   let height=section.offsetHeight
-   let id=section.getAttribute("id")
-   let scrolls=window.scrollY
+   let top=section.offsetTop;
+   
+   let height=section.offsetHeight;
+   
+   let id=section.getAttribute("id");
+   
+   let scrolls=window.scrollY;
+   if(scrolls>=top-400 && scrolls<top + height){
+    link.forEach(links=>{
+        links.classList.remove("active-scroll")
+    })
+    let recuperationId=document.querySelector(`header ul li a[href*=${id}]`)
+    recuperationId.classList.add("active-scroll")
+   }
     })
 }
 
