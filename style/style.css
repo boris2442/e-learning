@@ -68,6 +68,10 @@ nav ul li a{
    
 
 }
+.active-scroll{
+    border-bottom: 2px solid #333;
+ 
+}
     nav ul li a::after{
         content: "";
         background-color: #6e51cf;
