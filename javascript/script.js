@@ -79,7 +79,7 @@ const scrollActive=()=>{
    let id=section.getAttribute("id");
    
    let scrolls=window.scrollY;
-   if(scrolls>=top-400 && scrolls<top + height){
+   if(scrolls>=top-250 && scrolls<top + height){
     link.forEach(links=>{
         links.classList.remove("active-scroll")
     })
