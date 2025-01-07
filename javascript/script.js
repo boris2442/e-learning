@@ -24,7 +24,7 @@ window.addEventListener("scroll", ()=>{
         link.forEach(link => {
             link.classList.add("link"); // Ajouter la classe "link" à tous les <a>
           });
-        // link.classList.add("link");
+
     }else{
         header.classList.remove("scroll");
         link.forEach(link => {
@@ -66,3 +66,17 @@ window.addEventListener("scroll", ()=>{
     navigation.classList.remove("active")
     navigation.style.transition='1s ease-in-out'
 })
+
+
+const sections=document.querySelectorAll("section");
+
+const scrollActive=()=>{
+    sections.forEach(section=>{
+   let top=section.offsetTop
+   let height=section.offsetHeight
+   let id=section.getAttribute("id")
+   let scrolls=window.scrollY
+    })
+}
+
+window.addEventListener("scroll", scrollActive)
