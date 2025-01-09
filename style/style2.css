@@ -16,7 +16,17 @@ header{
 }
 .dark{
     font-size: 3.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 240px;
+    top: 10px;
+}
+.dark:hover{
+    color:var(--var-bg-color);
+}
+ header span{
     position: absolute;
     right: 200px;
-    top: 30px;
+    opacity: 1;
+    top: 70px;
 }

@@ -90,5 +90,3 @@ const scrollActive=()=>{
 }
 
 window.addEventListener("scroll", scrollActive);
-
-const dark=document.querySelector(".dark");
